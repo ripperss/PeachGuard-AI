@@ -4,3 +4,7 @@
 /.idea/
 __pycache__/
 *.pyc
+/artifacts/*
+!/artifacts/models/
+!/artifacts/models/.gitkeep
+*.pt
