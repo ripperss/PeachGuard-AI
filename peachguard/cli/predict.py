@@ -13,7 +13,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Распознать болезни персика на изображении.")
     parser.add_argument("--model", required=True, type=Path, help="Путь к весам модели .pt")
     parser.add_argument("--image", required=True, type=Path, help="Путь к изображению")
-    parser.add_argument("--image-size", default=1024, type=int, help="Размер изображения для модели")
+    parser.add_argument("--image-size", default=640, type=int, help="Размер изображения для модели")
     parser.add_argument("--confidence", default=0.5, type=float, help="Минимальная уверенность детекции")
     return parser.parse_args()
 

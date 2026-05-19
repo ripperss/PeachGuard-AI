@@ -1,13 +1,11 @@
-path: data/processed
+path: ../data/processed
 train: images/train
 val: images/val
+test: images/test
 
 names:
-  0: chloroz
-  1: citopsoroz
-  2: gomoz
-  3: kurchavost
-  4: monilioz
-  5: muchn_rosa
-  6: persik
-  7: sgnivshie_persiki
+  0: bacterial_spot
+  1: brown_rot
+  2: healthy_peach
+  3: shot_hole
+  4: shot_hole_leaf

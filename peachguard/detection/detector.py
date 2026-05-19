@@ -19,7 +19,7 @@ class PeachDetector:
         self,
         source: str | Path | Any,
         *,
-        image_size: int = 1024,
+        image_size: int = 640,
         confidence: float = 0.5,
     ) -> list[Detection]:
         results = self.model.predict(

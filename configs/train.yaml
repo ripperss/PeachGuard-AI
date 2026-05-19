@@ -2,7 +2,7 @@ model: yolo11n.pt
 dataset: configs/dataset.yaml
 epochs: 300
 batch: 4
-image_size: 1024
+image_size: 640
 workers: 4
 patience: 100
 learning_rate: 0.005
