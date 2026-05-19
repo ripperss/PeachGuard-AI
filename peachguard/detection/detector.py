@@ -22,7 +22,12 @@ class PeachDetector:
         image_size: int = 1024,
         confidence: float = 0.5,
     ) -> list[Detection]:
-        results = self.model.predict(source=source, imgsz=image_size, conf=confidence)
+        results = self.model.predict(
+            source=source,
+            imgsz=image_size,
+            conf=confidence,
+            verbose=False,
+        )
         detections: list[Detection] = []
 
         for result in results:
