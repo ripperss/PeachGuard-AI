@@ -8,3 +8,6 @@ patience: 100
 learning_rate: 0.005
 output_dir: artifacts/runs
 run_name: train
+fraction: 1.0
+save_period: -1
+exist_ok: false

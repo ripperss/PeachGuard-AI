@@ -19,6 +19,9 @@ class TrainingConfig:
     learning_rate: float
     output_dir: Path
     run_name: str
+    fraction: float
+    save_period: int
+    exist_ok: bool
 
 
 def load_training_config(path: str | Path) -> TrainingConfig:
@@ -36,6 +39,9 @@ def load_training_config(path: str | Path) -> TrainingConfig:
         learning_rate=float(raw_config["learning_rate"]),
         output_dir=Path(raw_config["output_dir"]),
         run_name=str(raw_config["run_name"]),
+        fraction=float(raw_config.get("fraction", 1.0)),
+        save_period=int(raw_config.get("save_period", -1)),
+        exist_ok=bool(raw_config.get("exist_ok", False)),
     )
 
 
