@@ -1,12 +1,24 @@
+# Reference and downloaded datasets
 /reference/
-/Peach Disease.v8i.yolov8/
+/datasets/
+
+# Runtime data and training outputs
 /data/
-/.codex/
-/.venv/
-/.idea/
-__pycache__/
-*.pyc
+/runs/
 /artifacts/*
 !/artifacts/models/
 !/artifacts/models/.gitkeep
+
+# Model weights and downloaded base checkpoints
 *.pt
+
+# Local tooling
+/.agents/
+/.codex/
+/.idea/
+/.ruff_cache/
+/.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]

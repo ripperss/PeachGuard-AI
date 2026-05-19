@@ -18,6 +18,7 @@ class TrainingConfig:
     patience: int
     learning_rate: float
     output_dir: Path
+    run_name: str
 
 
 def load_training_config(path: str | Path) -> TrainingConfig:
@@ -34,6 +35,7 @@ def load_training_config(path: str | Path) -> TrainingConfig:
         patience=int(raw_config["patience"]),
         learning_rate=float(raw_config["learning_rate"]),
         output_dir=Path(raw_config["output_dir"]),
+        run_name=str(raw_config["run_name"]),
     )
 
 

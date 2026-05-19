@@ -22,6 +22,7 @@ def train_model(config: TrainingConfig) -> Path:
         patience=config.patience,
         lr0=config.learning_rate,
         project=str(config.output_dir),
+        name=config.run_name,
     )
 
     return config.output_dir
