@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 
-from peachguard.detection import CLASS_ID_TO_NAME
+from peachguard.detection.classes import CLASS_ID_TO_NAME
 
 
 @dataclass(frozen=True)
