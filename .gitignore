@@ -9,6 +9,10 @@
 !/artifacts/models/
 !/artifacts/models/.gitkeep
 
+# Local dataset archives
+*.tar.gz
+*.zip
+
 # Model weights and downloaded base checkpoints
 *.pt
 
