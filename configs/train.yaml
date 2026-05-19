@@ -1,0 +1,9 @@
+model: yolo11n.pt
+dataset: configs/dataset.yaml
+epochs: 300
+batch: 4
+image_size: 1024
+workers: 4
+patience: 100
+learning_rate: 0.005
+output_dir: artifacts/runs

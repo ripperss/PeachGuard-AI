@@ -1,0 +1,13 @@
+path: data/processed
+train: images/train
+val: images/val
+
+names:
+  0: chloroz
+  1: citopsoroz
+  2: gomoz
+  3: kurchavost
+  4: monilioz
+  5: muchn_rosa
+  6: persik
+  7: sgnivshie_persiki
