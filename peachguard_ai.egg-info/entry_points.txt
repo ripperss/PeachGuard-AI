@@ -1,0 +1,3 @@
+[console_scripts]
+peachguard-bot = peachguard.cli.bot:main
+peachguard-report = peachguard.cli.report:main

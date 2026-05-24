@@ -20,14 +20,16 @@
 - `configs/train.yaml` - параметры обучения.
 - `configs/dataset.yaml` - описание датасета в формате YOLO.
 - `data/processed` - изображения и разметка для `train`, `val` и `test`.
-- `peachguard/cli` - CLI-команды обучения и инференса.
-- `peachguard/detection` - обертка над YOLO для предсказаний.
-- `peachguard/training` - загрузка конфига и запуск обучения.
+- `peachguard/cli` - CLI-команды обучения, инференса, отчёта и бота.
+- `peachguard/detection` - обертка над YOLO для предсказаний (`PeachDetector`).
+- `peachguard/training` - загрузка конфига, запуск обучения и отчёт по `results.csv`.
+- `peachguard/bot` - Telegram-бот поверх `PeachDetector`.
 - `artifacts/runs` - директория для результатов обучения по умолчанию.
+- `artifacts/models` - сюда кладите `best.pt` после обучения в Colab.
 
 ## Установка
 
-Проект использует Python `>=3.14`. Зависимости описаны в `pyproject.toml` и зафиксированы в `uv.lock`.
+Проект использует Python `>=3.13`. Зависимости описаны в `pyproject.toml` и зафиксированы в `uv.lock`.
 
 ```bash
 uv sync

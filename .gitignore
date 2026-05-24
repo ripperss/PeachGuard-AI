@@ -16,6 +16,8 @@
 # Model weights and downloaded base checkpoints
 *.pt
 
+.env
+
 # Local tooling
 /.agents/
 /.codex/
@@ -28,3 +30,6 @@ __pycache__/
 *.py[cod]
 
 weights/
+
+# Generated training reports in test fixtures
+tests/**/report/
